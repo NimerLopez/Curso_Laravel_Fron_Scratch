@@ -1,5 +1,5 @@
 # Manejo de rutas en laravel
-
+## Del episodio 1 al 4 se realizo de otra forma ya documentada
 En las carpetas rutas, se encuentra un archivo llamado web.php el cual se encarga llamar las vistas que se encuentran en la carpeta resources y luego en views en esta se encontraran todas las vistas que se desean mostrar.
 
 ## ¿Que pasa si borro o comento las rutas o escribo mal el nombre de una vista?
