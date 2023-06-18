@@ -21,7 +21,11 @@ Route::get('posts/{post}', function ($slug) {
     if (!file_exists($path)) {
         return redirect('/');
     }
-    $post = file_get_contents($path);
+    $post = cache()->remember("posts.{$slug}", 5,function() use ($path){
+        var_dump('file_get_contents');
+        return file_get_contents($path);
+    });
+    
     return view('post', [
         'post' => $post
     ]);
