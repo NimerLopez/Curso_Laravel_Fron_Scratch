@@ -9,17 +9,10 @@
     <!-- <script src="/app.js"></script> -->
 </head>
 <body>
+    <?php foreach ($posts as $post) : ?>
     <article>
-        <h1><a href="/posts/my-first-post"> Mi Primer Post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sint iusto ipsa minus, voluptatum debitis pariatur neque labore fuga nobis itaque error reiciendis dolorum autem perspiciatis, tempora delectus id earum?</p>
+        <?= $post; ?>
     </article>
-    <article>
-        <h1><a href="/posts/my-second-post">Mi Segundo Post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sint iusto ipsa minus, voluptatum debitis pariatur neque labore fuga nobis itaque error reiciendis dolorum autem perspiciatis, tempora delectus id earum?</p>
-    </article>
-    <article>
-        <h1><a href="/posts/my-third-post">Mi Tercero Post</a></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sint iusto ipsa minus, voluptatum debitis pariatur neque labore fuga nobis itaque error reiciendis dolorum autem perspiciatis, tempora delectus id earum?</p>
-    </article>
+    <?php endforeach ?>
 </body>
 </html>
