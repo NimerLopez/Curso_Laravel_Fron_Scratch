@@ -33,22 +33,3 @@ se debe hacer en consola
 ```cmd
        <a href="/categories/{{$post->category->slug}}">{{$post->category->name}}</a>
 ```
-
-## 
-```php
-
-```
-### 
-```php
-```
-
-## 
-```php
-    
-```
-## 
-```php
-```
-
-### Quedaria de la siguiente forma
-![img](img/Taller%2025/)
