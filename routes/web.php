@@ -2,8 +2,7 @@
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
-
-
+use App\Models\Category;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,5 +26,11 @@ Route::get('/', function () {
 Route::get('posts/{post:slug}', function (Post $post) {
     //$post = Post::findOrFail($id);
     return view('post', ['post' => $post]);
+});
+Route::get('categories/{category:slug}', function (Category $category) {
+    
+    return view('posts',[
+        'posts'=>$category->posts
+    ]);
 });
 
