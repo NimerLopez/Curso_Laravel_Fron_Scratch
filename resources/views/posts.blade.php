@@ -6,6 +6,7 @@
             {!! $post->title !!}
         </a>
     </h1>
+    <a href="#">{{$post->category->name}}</a>
     <div>
         {{ $post->excerpt }}
     </div>
