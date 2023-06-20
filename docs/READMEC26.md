@@ -1,40 +1,26 @@
 # Clockwork, y el problema N+1
 
-## 1 vamos a crear una nueva ruta para las categorias.
-```php
-   
+## 1 vamos a modificar la ruta principal.
+\Illuminate\Support\Facades\DB::listen(function ($query) { }): Esta línea configura un escucha de consultas de la base de datos utilizando la clase DB de Laravel
+```php   
+   Route::get('/', function () {
+    \Illuminate\Support\Facades\DB::listen(function ($query){
+        logger($query->sql, $query->bindings);
+    });
+    return view('posts',[
+        'posts'=>Post::all()
+    ]);
+});
 ```
 
-## 
+## 2 Instala la siguiente libreria de composer
 ```php
-    
+    composer require itsgoingd/clockwork
 ```
-## 
+## 3 En Google Chrome instala la siguiernte extencion
 
-```php
-       
-```
+[Clockwork](https://chrome.google.com/webstore/detail/clockwork/dmggabnehkmmfmdffgajcflpdjlnoemp/related)
 
-## 4 
-```cmd
-       <a href="/categories/{{$post->category->slug}}">{{$post->category->name}}</a>
-```
-
-## 
-```php
-
-```
-### 
-```php
-```
-
-## 
-```php
-    
-```
-## 
-```php
-```
-
-### Quedaria de la siguiente forma
-![img](img/Taller%2025/)
+## 4 Inspecciona a ver cuanto trafico existe en pagina.
+tendria que salirte lo siguiente.
+![img](img/Taller%2026/web.png)

@@ -15,11 +15,9 @@ use App\Models\Category;
 */
 
 Route::get('/', function () {
-    //$post=Post::all();
-    //ddd($post);
-    // $posts = Post::all();   
+    
     return view('posts',[
-        'posts'=>Post::all()
+        'posts'=>Post::with('category')->get()
     ]);
 });
 
