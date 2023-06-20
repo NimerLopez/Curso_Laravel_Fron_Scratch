@@ -1,6 +1,6 @@
 # Convierta HTML y CSS a Blade
 
-## 1 Descarga este archivo o clonalo
+## 1 Descarga este archivo 
 [Laravel From Scratch: HTML & CSS](https://github.com/laracasts/Laravel-From-Scratch-HTML-CSS)
 
 
