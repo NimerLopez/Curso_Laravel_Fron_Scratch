@@ -1,36 +1,18 @@
 <x-layout>
-<!-- @foreach ($posts as $post)
-<article class="{{ $loop->even ? 'foobar' : '' }}">
-    <h1>
-        <a href="/posts/{{ $post->slug }}">
-            {!! $post->title !!}
-        </a>
-    </h1>
-    By <a href="authors/{{$post->author->username}}">{{$post->author->name}}</a> in   <a href="/categories/{{$post->category->slug}}">{{$post->category->name}}</a>
-    <div>
-        {!! $post->excerpt !!}
-    </div>
-</article>
-@endforeach -->
         @include('_posts-header')
-
         <main class="max-w-6xl mx-auto mt-6 lg:mt-20 space-y-6">
-            <x-post-feature-card/>
+            @if ($posts->count())
+            <x-post-feature-card :post="$posts[0]"/>
 
-
-            <div class="lg:grid lg:grid-cols-2">
-                <x-post-card/>
-                <x-post-card/>
+            <div class="lg:grid lg:grid-cols-3">
+                @foreach ($posts->skip(1) as $post)
+                    <x-post-valor-x :post="$post"/>                             
+                @endforeach
             </div>
-
-            <div class="lg:grid lg:grid-cols-3">               
-                <x-post-card/>
-                <x-post-card/>
-                <x-post-card/>
-            </div>
+            @else
+                <p class="text-center">No existe contenido</p>
+            @endif         
         </main>
-
-
 </x-layout>
 
 

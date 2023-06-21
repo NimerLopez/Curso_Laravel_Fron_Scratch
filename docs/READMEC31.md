@@ -45,9 +45,5 @@ lo puedes implementar al home con el siguiernet codigo
 ```php
     @include('_posts-header')
 ```
-## 
-```php
-```
-
 ### Quedaria de la siguiente forma
 ![img](img/Taller%2031/web.png)
