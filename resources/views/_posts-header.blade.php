@@ -17,23 +17,22 @@
                 <!--  Category -->
                 
                 <div class="relative lg:inline-flex bg-gray-100 rounded-xl">
-                <div x-data="{ show: false }" @click.away="show = false" >
-                        <button @click="show =! show"
-                        class="py-2 pl-3 pr-9 text-sm font-semibold text-left w-full lg:w-32 flex lg:inline-flex">
-                        {{ isset($currentCategory) ? ucwords($currentCategory->name) : 'Categories' }}
-                        </button>
-
-                        <div x-show="show" class="py-2 absolute bg-gray-100 mte-2 rounded-xl w-32 w-full z-50" style="display:none">
-                        <a href="/" class="block text-left px-3 text-sm leading-6 hover:bg-blue-500 focus:bg-blue-500 hover:text-white focus:text-white">all</a>
-                            @foreach ($categories as $category)
-                                <a href="/categories/{{ $category->slug }}" 
-                                class="block text-left px-3 text-sm leading-6 hover:bg-blue-500 focus:bg-blue-500 hover:text-white focus:text-white
-                                {{ isset($currentCategory) && $currentCategory->is($category) ? 'bg-blue-500 text-white' : '' }}
-                                ">
-                                {{ $category->name }}</a>
-                            @endforeach
-                        </div>
-                    </div>  
+                    <x-dropdown> 
+                        <x-slot name="trigger">
+                            <button class="py-2 pl-3 pr-9 text-sm font-semibold text-left w-full lg:w-32 flex lg:inline-flex">
+                                {{ isset($currentCategory) ? ucwords($currentCategory->name) : 'Categories' }}
+                            </button>                            
+                        </x-slot>
+                        <x-dropdown-item href="/" :active="request()->routeIs('home')">All</x-dropdown-item>
+                    @foreach ($categories as $category)
+                    <!-- {{ isset($currentCategory) && $currentCategory->is($category) ? 'bg-blue-500 text-white' : '' }}  -->
+                    <x-dropdown-item href="/categories/{{ $category->slug }}"
+                        :active="request()->is('categories/' . $category->slug)">
+                        {{ $category->name }}
+                    </x-dropdown-item>
+                    @endforeach
+                    </x-dropdown>
+                </div>  
                
                     
                 <!-- <select class="flex-1 appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold">

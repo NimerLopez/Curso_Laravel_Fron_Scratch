@@ -79,3 +79,60 @@ Route::get('authors/{author:username}', function (User $author) {
 
 ### Quedaria de la siguiente forma
 ![img](img/Taller%2034/web1.png)
+
+<br>
+
+# Cómo extraer un componente de hoja desplegable
+
+## Pasos para extraer un componente de hoja desplegable
+
+1. **Crear un nuevo archivo**: Crea un nuevo archivo con un nombre descriptivo para tu componente de hoja desplegable, por ejemplo, `dropdown.blade.php`.
+
+2. **Copiar el contenido del componente**: Copia el contenido completo de tu componente de hoja desplegable y pégalo en el nuevo archivo `dropdown.blade.php`.
+
+3. **Eliminar dependencias externas**: Asegúrate de eliminar cualquier dependencia externa que pueda estar presente en tu componente, como variables de PHP específicas del contexto. Esto hará que el componente sea más independiente y reutilizable.
+
+4. **Ajustar las directivas de Blade**: Si tu componente utiliza directivas Blade, como `@foreach` o `@if`, asegúrate de que las variables utilizadas en esas directivas estén disponibles en el contexto donde se utiliza el componente. Puedes pasar las variables necesarias al componente como propiedades.
+
+5. **Utilizar el componente en otras partes de la aplicación**: Ahora que tienes el componente de hoja desplegable en su propio archivo, puedes utilizarlo en otras partes de tu aplicación. Para hacerlo, importa el componente usando la directiva `x-dropdown` y pasa cualquier información necesaria a través de propiedades.
+
+Este código es un componente de dropdown. Un dropdown es como un menú desplegable que se muestra cuando hacemos clic en un botón o enlace. El código está escrito en lenguaje HTML y utiliza algunas características especiales proporcionadas por la biblioteca JavaScript llamada Alpine.js.
+
+```php
+   @props(['trigger'])
+<div x-data="{ show: false }" @click.away="show = false" >
+    {{-- Trigger --}}
+    <div @click="show= ! show">
+        {{$trigger}}
+    </div>
+
+
+<div x-show="show" class="py-2 absolute bg-gray-100 mte-2 rounded-xl w-32 w-full z-50" style="display:none">
+    {{$slot}}                      
+</div>
+```
+Cuando la propiedad show es true, se muestra este bloque de código utilizando x-show. Aquí, {{$slot}} muestra el contenido que se pasa al componente entre las etiquetas de apertura y cierre. Es como una ranura o espacio reservado donde podemos insertar cualquier contenido dentro del menú desplegable.
+
+El "trigger" o activador del menú desplegable. Es el elemento en el que hacemos clic para mostrar u ocultar el menú desplegable. Cuando hacemos clic en este elemento, se activa la función @click, que invierte el valor de la propiedad show. Aquí, {{$trigger}} muestra el contenido de la propiedad trigger que pasamos al componente.
+
+## vamos hacer el mismo proceso con los item 
+-crear un componente `x-dropdown-item`
+-Pasar el codigo al componente en este caso:
+
+```php
+@props(['active' => false])
+
+@php
+    $classes = 'block text-left px-3 text-sm leading-6 hover:bg-blue-500 focus:bg-blue-500 hover:text-white focus:text-white';
+    if ($active) {
+        $classes .= ' bg-blue-500 text-white';
+    }
+@endphp
+
+<a {{ $attributes->merge(['class' => $classes]) }}>
+    {{ $slot }}
+</a>
+```
+
+# Ajustes rápidos y limpieza
+
