@@ -136,3 +136,47 @@ El "trigger" o activador del menú desplegable. Es el elemento en el que hacemos
 
 # Ajustes rápidos y limpieza
 
+## 1 cambiar clase de este div
+esto evitara que la lista de categorias no se haga tan grande y que mejor haga scroll
+``` php
+<div x-show="show" class="py-2 absolute bg-gray-100 mte-2 rounded-xl w-32 w-full z-50 overflow-auto max-h-52" style="display:none">
+```
+## 2 borrar la texto del inicio en el componente post headers
+
+## 3 comenatra estas lineas de codigo
+```php
+                <!-- <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl">
+                    <select class="flex-1 appearance-none bg-transparent py-2 pl-3 pr-9 text-sm font-semibold">
+                        <option value="category" disabled selected>Other Filters
+                        </option>
+                        <option value="foo">Foo
+                        </option>
+                        <option value="bar">Bar
+                        </option>
+                    </select>
+
+                    <svg class="transform -rotate-90 absolute pointer-events-none" style="right: 12px;" width="22"
+                         height="22" viewBox="0 0 22 22">
+                        <g fill="none" fill-rule="evenodd">
+                            <path stroke="#000" stroke-opacity=".012" stroke-width=".5" d="M21 1v20.16H.84V1z">
+                            </path>
+                            <path fill="#222"
+                                  d="M13.854 7.224l-3.847 3.856 3.847 3.856-1.184 1.184-5.04-5.04 5.04-5.04z"></path>
+                        </g>
+                    </svg>
+                </div> -->
+ ```
+ ## 4 modificar el factory del post con el siguiernet codigo
+ ```php
+     public function definition()
+    {
+        return [
+            'user_id'=>User::factory(),
+            'category_id'=>Category::factory(),
+            'title'=>$this->faker->sentence,
+            'slug'=>$this->faker->slug,
+            'excerpt'=>'<p>'. implode('</p><p>', $this->faker->paragraphs(2)) . '<P>',
+            'body'=>$this->faker->paragraph
+        ];
+    }               
+ ```
