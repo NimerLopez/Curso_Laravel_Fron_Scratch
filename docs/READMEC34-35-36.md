@@ -176,7 +176,7 @@ esto evitara que la lista de categorias no se haga tan grande y que mejor haga s
             'title'=>$this->faker->sentence,
             'slug'=>$this->faker->slug,
             'excerpt'=>'<p>'. implode('</p><p>', $this->faker->paragraphs(2)) . '<P>',
-            'body'=>$this->faker->paragraph
+            'body'=>=>'<p>'. implode('</p><p>', $this->faker->paragraphs(10)) . '<P>'
         ];
     }               
  ```
