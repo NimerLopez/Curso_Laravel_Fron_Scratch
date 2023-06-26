@@ -144,10 +144,14 @@ El episodio 34-35-36 Hablan sobre Un pequeño desvío desplegable de JavaScript
 
 - [34-35-36. A Small JavaScript Dropdown Detour](./S5-Integrate-the-Design/Episodio-34-35-36-htm-to-blade.md)
 
+---
+## Seccion 6
+---
+## Buscador de palabras clave
 
+En el capitulo 37 de forma desordenada y en el 38 de forma ordenada
 
-
-
+- [37-38. Search keywords](./S6-Search/Search-2-ways.md)
 
 
 
