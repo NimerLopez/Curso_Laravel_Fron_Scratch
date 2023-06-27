@@ -1,3 +1,4 @@
+[< Volver al índice](/docs/README.md)
 # Buscar (la forma desordenada)
 
 ## Que hace un formulario
