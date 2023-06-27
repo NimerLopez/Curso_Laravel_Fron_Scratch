@@ -61,23 +61,56 @@ Route::get('authors/{author:username}', function (User $author) {
 ```
 Gracias a esto, el codigo esta dividido en en el modelo y el controlador haciendo que nuestro codigo se vea mas limpio y asi poder reutilziar codigo
 
+---
+
+# Extraiga un componente de hoja desplegable de categoría
+
+## 1 Ejecuta en siguiente comando en la raiz del proyecto
+Maquina virtual.
+```cmd
+    php artisan make:component CategoryDropdown   
+```
+el comando php artisan make:component CategoryDropdown se utiliza en Laravel para generar la estructura básica de un componente Blade. El comando crea una clase en el directorio app/View/Components con el nombre especificado (CategoryDropdown.php en este caso) y una vista Blade en el directorio resources/views/components con el mismo nombre (category-dropdown.blade.php).
+
+El objetivo de este comando es ayudarte a generar rápidamente los archivos necesarios para crear un componente personalizado en tu aplicación Laravel
+
+## 2 En el componente creado pega la estructura deseada
+```php
+    <x-dropdown> 
+    <x-slot name="trigger">
+            <button class="py-2 pl-3 pr-9 text-sm font-semibold text-left w-full lg:w-32 flex lg:inline-flex">
+                {{ isset($currentCategory) ? ucwords($currentCategory->name) : 'Categories' }}
+            </button>                            
+    </x-slot>
+    <x-dropdown-item href="/" :active="request()->routeIs('home')">All</x-dropdown-item>
+        @foreach ($categories as $category)
+            <!-- {{ isset($currentCategory) && $currentCategory->is($category) ? 'bg-blue-500 text-white' : '' }}  -->
+            <x-dropdown-item href="/?category={{ $category->slug }}"
+                :active="request()->is('categories/' . $category->slug)">
+                {{ $category->name }}
+            </x-dropdown-item>
+        @endforeach
+</x-dropdown>
+```
+## En el otro archivo CategoryDropdown.php pega el siguiernte codigo.
+```php
+        public function render()
+    {
+        return view('components.category-dropdown',[
+            'categories'=>Category::all(),
+            'currentCategory'=>Category::firstWhere('slug', request('category'))
+        ]);
+    }
+```
+Este código define un componente de Blade CategoryDropdown que se utiliza para mostrar un menú desplegable de categorías, pasando la lista de categorías disponibles y la categoría actual a la vista asociada al componente.
+
+De esta forma lo que se esta haciendo en limpiar mas el codigo ya que ahora el header no tiene el Dropdown en su estructura si no que lo carga de otra vista la cual tiene otro componente que le pasa los datos de esta forma el codigo se ve mas limpio.
+
+Tambien se puede crear otra carpeta llamada posts y que ahi se encuentren los demas componentes.
+
 ### Quedaria de la siguiente forma
 ![img](img/web1.png)
 
-##
-
-## 4 
-```cmd
-       
-```
-
-## 
-```php
-
-```
-### 
-```php
-```
 
 ## 
 ```php
