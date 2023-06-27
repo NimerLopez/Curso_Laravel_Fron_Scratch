@@ -153,7 +153,13 @@ En el capitulo 37 de forma desordenada y en el 38 de forma ordenada
 
 - [37-38. Search keywords](./S6-Search/Search-2-ways.md)
 
+---
+## Seccion 7
+---
+## Filtros
+En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando el modelo vista controlador.
 
+- [39-al-43. Filtering](./S7-Filtering/39-al-43-Filtering.md)
 
 
 
