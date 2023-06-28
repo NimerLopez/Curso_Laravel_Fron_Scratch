@@ -28,9 +28,9 @@ Route::get('posts/{post:slug}',[PostsController::class, 'show']);
 //     ]);
 // })->name('categories');
 
-Route::get('authors/{author:username}', function (User $author) {
+// Route::get('authors/{author:username}', function (User $author) {
     
-    return view('posts', [
-        'posts' => $author->posts
-    ]);
-});
+//     return view('posts.index', [
+//         'posts' => $author->posts
+//     ]);
+// });

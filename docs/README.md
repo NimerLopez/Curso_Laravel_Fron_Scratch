@@ -157,6 +157,8 @@ En el capitulo 37 de forma desordenada y en el 38 de forma ordenada
 ## Seccion 7
 ---
 ## Filtros
+En este caso no esta dividido en rutas ya que toda esta seccion esta vinculada, no fue necesario dividir por capitulo.
+
 En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando el modelo vista controlador.
 
 - [39-al-43. Filtering](./S7-Filtering/39-al-43-Filtering.md)

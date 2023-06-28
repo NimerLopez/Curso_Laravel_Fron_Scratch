@@ -1,5 +1,5 @@
 [< Volver al índice](/docs/README.md)
-# Restricciones avanzadas de consultas elocuentes
+# 39 Restricciones avanzadas de consultas elocuentes
 
 ## 1 Modifica el index PostsController agrega el siguiente codigo.
 
@@ -63,7 +63,7 @@ Gracias a esto, el codigo esta dividido en en el modelo y el controlador haciend
 
 ---
 
-# Extraiga un componente de hoja desplegable de categoría
+# 40 Extraiga un componente de hoja desplegable de categoría
 
 ## 1 Ejecuta en siguiente comando en la raiz del proyecto
 Maquina virtual.
@@ -111,14 +111,47 @@ Tambien se puede crear otra carpeta llamada posts y que ahi se encuentren los de
 ### Quedaria de la siguiente forma
 ![img](img/web1.png)
 
+---
 
-## 
-```php
-    
-```
-## 
-```php
-```
+# 41 Filtrado de autores
 
+## 1 Agregar una nueva consulta al modelo posts
+```php
+        public function scopeFilter($query, array $filters)
+    {
+       $query->when($filters['search'] ?? false, fn($query, $search)=>
+       $query
+       ->where('title','like','%' . $search . '%')
+       ->orWhere('body','like','%' . $search . '%'));
+       
+       $query->when($filters['category'] ?? false, fn($query, $category)=>
+       $query
+        ->whereHas('category',fn($query)=> 
+        $query->where('slug',$category))); 
+
+        $query->when($filters['author'] ?? false, fn($query, $author)=>
+        $query
+         ->whereHas('author',fn($query)=> 
+         $query->where('username',$author))); 
+    }
+```
+Esto lo que hace es el filtro por autor
+
+## 2 Agregar al Controlador para que pueda pasar el filtro de autores
+```php
+        public function index()
+    {
+        //dd(request(['search']));
+        return view('posts.index',[
+            'posts'=>Post::latest()->filter(request(['search', 'category','author']))->get()
+            
+        ]);
+    }
+```
+## 3 Las rutas quedarian de la siguiernte forma
+```php
+    Route::get('/',[PostsController::class, 'index'])->name('home');
+    Route::get('posts/{post:slug}',[PostsController::class, 'show']);
+```
 ### Quedaria de la siguiente forma
-![img](img/Taller%2025/)
+![img](img/web2.png)
