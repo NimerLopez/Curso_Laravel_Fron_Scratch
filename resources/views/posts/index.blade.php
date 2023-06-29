@@ -7,8 +7,9 @@
             <div class="lg:grid lg:grid-cols-3">
                 @foreach ($posts->skip(1) as $post)
                     <x-post-valor-x :post="$post"/>                             
-                @endforeach
+                @endforeach               
             </div>
+            {{$posts->links()}}
             @else
                 <p class="text-center">No existe contenido</p>
             @endif         

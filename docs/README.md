@@ -163,6 +163,12 @@ En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando 
 
 - [39-al-43. Filtering](./S7-Filtering/39-al-43-Filtering.md)
 
+---
+## Seccion 8
+---
 
+## Pagination
+
+- [44. Pagination](./S8-Pagination/Laughably-Simple-Pagination.md)
 
 
