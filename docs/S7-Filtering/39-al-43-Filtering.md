@@ -155,3 +155,41 @@ Esto lo que hace es el filtro por autor
 ```
 ### Quedaria de la siguiente forma
 ![img](img/web2.png)
+
+---
+# 42 Combinar categorías y consultas de búsqueda
+
+## 1 Modificar el form del buscador 
+
+```php
+                    <form method="GET" action="/">
+                        @if (request('category'))
+                            <input type="hidden" name="category" value="{{request('category')}}">
+                        @endif
+                        <input type="text" 
+                            name="search" 
+                            placeholder="Find something"
+                            class="bg-transparent placeholder-black font-semibold text-sm"
+                            value="{{request('search')}}">
+                       
+                    </form>
+```            
+El if lo que hace es que la ruta o el slug de la categoria se guarde al momento buscar algun dato para si luego poder filtrar por categoria y por palabra.
+
+
+## 2 Modifica el category dropdown
+
+```php
+    <x-dropdown-item href="/?category={{ $category->slug }}&{{http_build_query(request()->except('category'))}}"
+        :active="request()->is('categories/' . $category->slug)">
+        {{ $category->name }}
+    </x-dropdown-item>
+```
+- http_build_query() es una función en PHP que toma una matriz asociativa de parámetros y los convierte en una cadena de consulta válida para una URL. En este caso, se está utilizando para construir la cadena de consulta con los parámetros de la solicitud actual, excepto el parámetro 'category'.
+
+- request() es una función en Laravel que representa la instancia actual de la solicitud HTTP. Proporciona métodos para acceder a los parámetros, encabezados y otras propiedades de la solicitud.
+
+- except() es un método de Laravel que permite excluir ciertos parámetros de la solicitud. En este caso, se excluye el parámetro 'category' de la cadena de consulta construida.
+
+### Quedaria de la siguiente forma
+![img](img/web3.png)
