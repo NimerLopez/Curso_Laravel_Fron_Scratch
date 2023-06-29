@@ -193,3 +193,25 @@ El if lo que hace es que la ruta o el slug de la categoria se guarde al momento 
 
 ### Quedaria de la siguiente forma
 ![img](img/web3.png)
+
+# 43 Arreglar un error de consulta elocuente confuso
+
+##  1 modifica en el modelo posts elfiltro search
+```php
+       $query->when($filters['search'] ?? false, fn($query, $search)=>
+       $query->where(fn($query)=>
+       $query->where('title','like','%' . $search . '%')
+       ->orWhere('body','like','%' . $search . '%')
+       )
+    );
+```
+- fn($query, $search) Es una función anónima que acepta dos argumentos: $query (el objeto de consulta) y $search (el valor del filtro de búsqueda).
+
+- $query->where(...): Aquí se realiza la operación de filtrado real en la consulta. Se utilizan métodos encadenados para aplicar condiciones a la consulta.
+
+- $query->where('title', 'like', '%' . $search . '%'): Este método where() establece una condición para que el campo 'title' de la tabla coincida parcialmente con el valor de búsqueda. El operador like se utiliza para realizar una búsqueda de coincidencia parcial y los caracteres % se utilizan para indicar que puede haber cualquier otro texto antes y después del valor de búsqueda.
+
+- orWhere('body', 'like', '%' . $search . '%'): Este método orWhere() establece una condición adicional en la que el campo 'body' de la tabla coincide parcialmente con el valor de búsqueda. El operador orWhere() indica que se deben cumplir una de las dos condiciones anteriores.
+
+### Quedaria de la siguiente forma
+![img](img/web4.png)
