@@ -185,3 +185,7 @@ Encriptacion de Contraseñas
 Manejo de errores
 
 - [47. Failed Validation and Old Input Data](./S9-Forms-and-Authentication/Failed-Validation-and-Old-Input-Data.md)
+
+Mensaje de confirmacion
+
+- [48. Show a Success Flash Message](./S9-Forms-and-Authentication/Show-a-Success-Flash-Message.md)
