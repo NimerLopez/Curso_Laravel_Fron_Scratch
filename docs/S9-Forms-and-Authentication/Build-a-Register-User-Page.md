@@ -4,6 +4,7 @@
 En este episodio vamos a crear una nueva vista en el cual vamos a poder registrar usuarios 
 
 ## 1 Crear un nuevo controlador para los usuarios con el siguiernte comando 
+Escribir este comando en la maquina virtual raiz del proyecto
 ```cmd
     php artisan make:controller RegisterController
 ```
