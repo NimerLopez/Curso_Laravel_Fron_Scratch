@@ -13,8 +13,12 @@
                 type="text" 
                 id="name" 
                 name="name"
+                value="{{ old('name')}}"
                 required
-                > 
+                >
+                @error('name')
+                    <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                @enderror
             </div>              
             <div class="mb-6">
                 <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
@@ -25,8 +29,12 @@
                 type="text" 
                 id="username" 
                 name="username"
+                value="{{ old('username')}}"
                 required
                 > 
+                @error('username')
+                    <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                @enderror
             </div>
             <div class="mb-6">
                 <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
@@ -37,8 +45,12 @@
                 type="email" 
                 id="email" 
                 name="email"
+                value="{{ old('email')}}"
                 required
                 > 
+                @error('email')
+                    <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                @enderror
             </div> 
             <div class="mb-6">
                 <label class="block mb-2 uppercase font-bold text-xs text-gray-700"
@@ -49,14 +61,18 @@
                 type="password" 
                 id="password" 
                 name="password"
+                value="{{ old('password')}}"
                 required
                 > 
+                @error('password')
+                    <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
+                @enderror
             </div>  
             <div class="mb-6">
                 <button class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">
                         Submit
                 </button>
-            </div>  
+            </div> 
         </form>
     </main>
 </section>

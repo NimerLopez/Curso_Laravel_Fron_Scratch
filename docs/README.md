@@ -180,4 +180,8 @@ Se implementa el registro de usuario
 - [45. Build a Register User Page](./S9-Forms-and-Authentication/Build-a-Register-User-Page.md)
 
 Encriptacion de Contraseñas
-- [45. Automatic Password Hashing With Mutators](./S9-Forms-and-Authentication/Automatic-Password-Hashing-With-Mutators.md)
+- [46. Automatic Password Hashing With Mutators](./S9-Forms-and-Authentication/Automatic-Password-Hashing-With-Mutators.md)
+
+Manejo de errores
+
+- [47. Failed Validation and Old Input Data](./S9-Forms-and-Authentication/Failed-Validation-and-Old-Input-Data.md)
