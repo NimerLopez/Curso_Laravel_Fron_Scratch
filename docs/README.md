@@ -175,6 +175,9 @@ En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando 
 ## Seccion 9
 ---
 ## Formularios y autenticación
+
 Se implementa el registro de usuario
 - [45. Build a Register User Page](./S9-Forms-and-Authentication/Build-a-Register-User-Page.md)
 
+Encriptacion de Contraseñas
+- [45. Automatic Password Hashing With Mutators](./S9-Forms-and-Authentication/Automatic-Password-Hashing-With-Mutators.md)
