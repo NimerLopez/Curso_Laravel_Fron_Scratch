@@ -1,13 +1,3 @@
-[< Volver al índice](/docs/README.md)
-
-# Crear la página de inicio de sesión
-
-En este episodio se va a crear la vista de login 
-
-## 1 Crea una carpeta llamada sessions y dentro de ella un componente blade llamado create
-
-debe tener la siguiernte estructura.
-```php
 <x-layout>
 <section class="px-6 py-8">
     <main class="max-w-lg mx-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
@@ -55,32 +45,3 @@ debe tener la siguiernte estructura.
     </main>
 </section>
 </x-layout>
-```
-Este forms ejecuta un llamado a la rutas post login el cual debe validar y returnar una sesion en caso de estar todo correcto.
-
-## 2 en el SesssionsController pega el siguiente codigo.
-
-```php
-        public function store()
-    {
-        $attributes = request()->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
-    
-        if (auth()->attempt($attributes)) {
-            return redirect('/')->with('success', 'Bienvenido de nuevo');
-        }
-        
-        throw ValidationException::withMessages(['email' => 'Credenciales inválidas']);     
-    }
-```
-Este codigo valida los datos y si todo esta correcto redirecciona al home con una sesion en caso contrario muestra un error.
-
-## 3 Pega las rutas correspondiente al login.
-```php
-    Route::get('login',[SessionsController::class, 'create'])->middleware('guest');
-    Route::post('login',[SessionsController::class, 'store'])->middleware('guest');
-```
-### Quedaria de la siguiente forma
-![img](img/web.login.view.png)
