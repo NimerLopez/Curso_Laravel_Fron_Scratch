@@ -2,6 +2,14 @@
 
 ## Seccion 2
 ---
+**Mensaje Importante:**
+
+Los commits del episodio 46 al 48 están etiquetados como 'Cambios en documentación cap x', pero en realidad debería decir 'se termina el episodio x'.
+
+<span style="color:red">¡Atención!</span> Por favor, tenga en cuenta esta corrección.
+
+---
+
 En la sección 1, se abordan los conceptos básicos de Laravel, incluyendo el manejo de rutas, la inclusión de CSS y JavaScript, la creación de rutas y vínculos, el almacenamiento de publicaciones de blog como archivos HTML, las restricciones de comodín de ruta, el uso de caché para operaciones costosas, la lectura de un directorio utilizando la clase Filesystem, la búsqueda de un paquete Composer para metadatos de publicaciones y la actualización de clasificación y caché de colecciones.
 <br>
 <br>
