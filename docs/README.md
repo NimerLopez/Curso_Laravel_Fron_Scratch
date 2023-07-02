@@ -197,3 +197,8 @@ Login y Logout
 Crear la pagina Login
 
 - [50. Build the Log In Page](./S9-Forms-and-Authentication/Build-the-Log-In-Page.md)
+
+Vistazo rápido de Laravel Breeze
+
+- [51. Laravel Breeze Quick Peek](./S9-Forms-and-Authentication/Laravel-Breeze-Quick-Peek.md)
+
