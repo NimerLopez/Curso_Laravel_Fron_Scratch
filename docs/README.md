@@ -189,3 +189,11 @@ Manejo de errores
 Mensaje de confirmacion
 
 - [48. Show a Success Flash Message](./S9-Forms-and-Authentication/Show-a-Success-Flash-Message.md)
+
+Login y Logout
+
+- [49. Login and Logout](./S9-Forms-and-Authentication/Login-and-Logout.md)
+
+Crear la pagina Login
+
+- [50. Build the Log In Page](./S9-Forms-and-Authentication/Build-the-Log-In-Page.md)
