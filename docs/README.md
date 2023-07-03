@@ -215,5 +215,10 @@ Vistazo rápido de Laravel Breeze
 ---
 ## Comentarios
 
+Escribir el marcado para un comentario de publicación
+
 - [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
 
+Coherencia de tabla y restricciones de clave externa
+
+- [53. Table Consistency and Foreign Key Constraints](./S10-Comments/Table-Consistency-and-Foreign-Key-Constraints.md)
