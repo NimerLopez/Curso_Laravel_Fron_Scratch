@@ -210,3 +210,10 @@ Vistazo rápido de Laravel Breeze
 
 - [51. Laravel Breeze Quick Peek](./S9-Forms-and-Authentication/Laravel-Breeze-Quick-Peek.md)
 
+---
+## Seccion 10
+---
+## Comentarios
+
+- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
