@@ -184,29 +184,30 @@ En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando 
 ---
 ## Formularios y autenticación
 
-Se implementa el registro de usuario
+Se implementa el registro de usuario.
+
 - [45. Build a Register User Page](./S9-Forms-and-Authentication/Build-a-Register-User-Page.md)
 
-Encriptacion de Contraseñas
+Encriptacion de Contraseñas.
 - [46. Automatic Password Hashing With Mutators](./S9-Forms-and-Authentication/Automatic-Password-Hashing-With-Mutators.md)
 
-Manejo de errores
+Manejo de errores.
 
 - [47. Failed Validation and Old Input Data](./S9-Forms-and-Authentication/Failed-Validation-and-Old-Input-Data.md)
 
-Mensaje de confirmacion
+Mensaje de confirmacion.
 
 - [48. Show a Success Flash Message](./S9-Forms-and-Authentication/Show-a-Success-Flash-Message.md)
 
-Login y Logout
+Login y Logout.
 
 - [49. Login and Logout](./S9-Forms-and-Authentication/Login-and-Logout.md)
 
-Crear la pagina Login
+Crear la pagina Login.
 
 - [50. Build the Log In Page](./S9-Forms-and-Authentication/Build-the-Log-In-Page.md)
 
-Vistazo rápido de Laravel Breeze
+Vistazo rápido de Laravel Breeze.
 
 - [51. Laravel Breeze Quick Peek](./S9-Forms-and-Authentication/Laravel-Breeze-Quick-Peek.md)
 
@@ -215,16 +216,20 @@ Vistazo rápido de Laravel Breeze
 ---
 ## Comentarios
 
-Escribir el marcado para un comentario de publicación
+Escribir el marcado para un comentario de publicación.
 
 - [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
 
-Coherencia de tabla y restricciones de clave externa
+Coherencia de tabla y restricciones de clave externa.
 
 - [53. Table Consistency and Foreign Key Constraints](./S10-Comments/Table-Consistency-and-Foreign-Key-Constraints.md)
 
 Implementacion de comentarios dinamicos.
 
 - [54. Make the Comments Section Dynamic](./S10-Comments/Make-the-Comments-Section-Dynamic.md)
+
+Diseña el formulario de comentarios.
+
+- [55. Design the Comment Form](./S10-Comments/Design-the-Comment-Form.md)
 
 
