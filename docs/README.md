@@ -232,6 +232,6 @@ Diseña el formulario de comentarios.
 
 - [55. Design the Comment Form](./S10-Comments/Design-the-Comment-Form.md)
 
-Activar el formulario de comentarios
+Activar el formulario de comentarios y limpieza de codigo
 
-- [56. Activate the Comment Form](./S10-Comments/Activate-the-Comment-Form.md)
+- [56-57. Activate the Comment Form and code cleanup](./S10-Comments/Activate-the-Comment-Form.md)

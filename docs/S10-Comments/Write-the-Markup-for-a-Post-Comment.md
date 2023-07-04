@@ -33,5 +33,23 @@ escribir el marcado adecuado para un comentario de publicación es importante po
 ```
 Unas ves echo esto tendras en la parte inferior un comentario del autor junto a la fecha
 
+# Un poco de limpieza del capítulo ligero
+
+## 1 Vamos a mover todo el diseño del form de comentarios a otro componente 
+![img](img/c1.orden.png)
+
+En la vista show debes llamarlo de la siguiernte manera.
+```php
+    @include ('posts._add-comment-form')
+```
+## 2 crea otro componente para el boton de submit
+![img](img/c2.orden.submit.png)
+
+Lo debes llamar de la siguiente forma.
+```php
+     <x-submit-button>Submit</x-submit-button>
+```
+Esto ayuda a que el codigo este estructurado y limpio, gracias a esto sera mas facil dar mantenimiento al software y que los demas desarrolladores lo entiendan.
+
 ### Quedaria de la siguiente forma
 ![img](img/web1.png)
