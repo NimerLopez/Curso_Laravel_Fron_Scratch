@@ -222,3 +222,9 @@ Escribir el marcado para un comentario de publicación
 Coherencia de tabla y restricciones de clave externa
 
 - [53. Table Consistency and Foreign Key Constraints](./S10-Comments/Table-Consistency-and-Foreign-Key-Constraints.md)
+
+Implementacion de comentarios dinamicos.
+
+- [54. Make the Comments Section Dynamic](./S10-Comments/Make-the-Comments-Section-Dynamic.md)
+
+

@@ -2,7 +2,7 @@
 
 # Escribir el marcado para un comentario de publicación
 
-escribir el marcado adecuado para un comentario de publicación es importante porque mejora la accesibilidad, la legibilidad y la mantenibilidad de tu sitio web. Además, proporciona una estructura clara y significativa que ayuda a los usuarios y motores de búsqueda a comprender y navegar por tu contenido de manera más efectiva.
+escribir el marcado adecuado para un comentario de publicación es importante porque mejora la accesibilidad, la legibilidad y la mantenibilidad de tu sitio web. Además, proporciona una estructura clara y significativa que ayuda a los usuarios.
 
 ## 1 En la vista show implementa el siguiernte codigo
 ```php
