@@ -9,6 +9,8 @@ use App\Http\Controllers\PostCommentsController;
 use Illuminate\Support\Facades\Route;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 use App\Models\Category;
+use MailchimpMarketing\ApiClient;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,6 +21,19 @@ use App\Models\Category;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('ping',function () {
+    $mailchimp = new \MailchimpMarketing\Apiclient();
+    $mailchimp->setConfig([
+      'apikey'=> config('services.mailchimp.key'),
+      'server'=>'us13'
+    ]);
+    $response = $mailchimp->lists->addListMember('d3c0c14060',[
+      'email_address'=>'nimero63@gmail.com',
+      'status'=>'subscribed'
+    ]);
+    ddd($response);
+ });
+ 
 
 Route::get('/',[PostsController::class, 'index'])->name('home');
 Route::get('posts/{post:slug}',[PostsController::class, 'show']);

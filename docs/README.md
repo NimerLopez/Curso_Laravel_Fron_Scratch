@@ -235,3 +235,27 @@ Diseña el formulario de comentarios.
 Activar el formulario de comentarios y limpieza de codigo
 
 - [56-57. Activate the Comment Form and code cleanup](./S10-Comments/Activate-the-Comment-Form.md)
+
+---
+## Seccion 11
+---
+
+## Boletines y API
+
+Ajustes de la API de Mailchimp
+
+
+- [58. Mailchimp API Tinkering](./S11-Newsletters-and-APIs/Mailchimp-API-Tinkering.md)
+
+
+- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
+
+- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
+
+- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
+
+- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
