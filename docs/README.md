@@ -244,11 +244,11 @@ Activar el formulario de comentarios y limpieza de codigo
 
 Ajustes de la API de Mailchimp
 
-
 - [58. Mailchimp API Tinkering](./S11-Newsletters-and-APIs/Mailchimp-API-Tinkering.md)
 
+Hacer que el formulario de boletín funcione
 
-- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+- [59. Make the Newsletter Form Work](./S11-Newsletters-and-APIs/Make-the-Newsletter-Form-Work.md)
 
 
 - [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
