@@ -24,11 +24,11 @@ use MailchimpMarketing\ApiClient;
 Route::get('ping',function () {
     $mailchimp = new \MailchimpMarketing\Apiclient();
     $mailchimp->setConfig([
-      'apikey'=> config('services.mailchimp.key'),
-      'server'=>'us13'
+      'apiKey'=> config('services.mailchimp.key'),
+      'server'=>'us17'
     ]);
-    $response = $mailchimp->lists->addListMember('d3c0c14060',[
-      'email_address'=>'nimero63@gmail.com',
+    $response = $mailchimp->lists->addListMember('ab21b4a70e',[
+      'email_address'=>'cashiro9@gmail.com',
       'status'=>'subscribed'
     ]);
     ddd($response);
