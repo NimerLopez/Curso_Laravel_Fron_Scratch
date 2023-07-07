@@ -250,12 +250,12 @@ Hacer que el formulario de boletín funcione
 
 - [59. Make the Newsletter Form Work](./S11-Newsletters-and-APIs/Make-the-Newsletter-Form-Work.md)
 
+Extraer un servicio de boletín
 
-- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
-
-
-- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+- [60. Extract a Newsletter Service](./S11-Newsletters-and-APIs/Extract-a-Newsletter-Service.md)
 
 
-- [52. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
+- [61. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+
 
