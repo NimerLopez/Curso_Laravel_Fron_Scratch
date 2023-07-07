@@ -265,3 +265,7 @@ Cofres de juguetes y contratos
 Limite el acceso solo a los administradores
 
 - [62. Limit Access to Only Admins](./S12-Admin-Section/Limit-Access-to-Only-Admins.md)
+
+Crear el formulario de publicación
+
+- [62. Create the Publish Post Form](./S12-Admin-Section/Create-the-Publish-Post-Form.md)
