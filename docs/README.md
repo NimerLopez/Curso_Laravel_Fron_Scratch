@@ -1,7 +1,7 @@
 # Curso Laravel 8 From Scratch
 
 ## Seccion 2
----
+
 **Mensaje Importante:**
 
 Los commits del episodio 46 al 48 están etiquetados como 'Cambios en documentación cap x', pero en realidad debería decir 'se termina el episodio x'.
@@ -53,7 +53,7 @@ Actualización de clasificación y almacenamiento en caché de colecciones
 
 ---
 ## Seccion 3
----
+
 En la sección 3, se continúa con el tema de Blade, el cual es el motor de plantillas de Laravel. Los temas que se abordan en esta sección incluyen los conceptos básicos de Blade, los diseños de hoja de dos maneras y algunos ajustes y consideraciones adicionales.
 <br>
 <br>
@@ -74,7 +74,7 @@ Algunos ajustes y consideración
 
 ---
 ## Seccion 4
----
+
 
 ### En esta sección se abordan temas relacionados con el trabajo con bases de datos en Laravel.
 
@@ -136,7 +136,7 @@ Relaciones de carga ansiosa en un modelo existente:
 
 ---
 ## Seccion 5
----
+
 
 ### Integracion de diseño
 
@@ -154,8 +154,8 @@ El episodio 34-35-36 Hablan sobre Un pequeño desvío desplegable de JavaScript
 
 ---
 ## Seccion 6
----
-## Buscador de palabras clave
+
+### Buscador de palabras clave
 
 En el capitulo 37 de forma desordenada y en el 38 de forma ordenada
 
@@ -163,8 +163,8 @@ En el capitulo 37 de forma desordenada y en el 38 de forma ordenada
 
 ---
 ## Seccion 7
----
-## Filtros
+
+### Filtros
 En este caso no esta dividido en rutas ya que toda esta seccion esta vinculada, no fue necesario dividir por capitulo.
 
 En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando el modelo vista controlador.
@@ -173,16 +173,16 @@ En este saccion se sigue trabajando con vistas pero esta vez se esta utilizando 
 
 ---
 ## Seccion 8
----
 
-## Pagination
+
+### Pagination
 
 - [44. Pagination](./S8-Pagination/Laughably-Simple-Pagination.md)
 
 ---
 ## Seccion 9
----
-## Formularios y autenticación
+
+### Formularios y autenticación
 
 Se implementa el registro de usuario.
 
@@ -213,8 +213,9 @@ Vistazo rápido de Laravel Breeze.
 
 ---
 ## Seccion 10
----
-## Comentarios
+
+
+### Comentarios
 
 Escribir el marcado para un comentario de publicación.
 
@@ -238,9 +239,9 @@ Activar el formulario de comentarios y limpieza de codigo
 
 ---
 ## Seccion 11
----
 
-## Boletines y API
+
+### Boletines y API
 
 Ajustes de la API de Mailchimp
 
@@ -257,5 +258,8 @@ Extraer un servicio de boletín
 Cofres de juguetes y contratos
 
 - [61. Toy Chests and Contracts](./S11-Newsletters-and-APIs/Toy-Chests-and-Contracts.md)
+
+---
+## Seccion 12
 
 
