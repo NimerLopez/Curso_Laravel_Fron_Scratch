@@ -254,8 +254,8 @@ Extraer un servicio de boletín
 
 - [60. Extract a Newsletter Service](./S11-Newsletters-and-APIs/Extract-a-Newsletter-Service.md)
 
+Cofres de juguetes y contratos
 
-
-- [61. Write the Markup for a Post Comment](./S10-Comments/Write-the-Markup-for-a-Post-Comment.md)
+- [61. Toy Chests and Contracts](./S11-Newsletters-and-APIs/Toy-Chests-and-Contracts.md)
 
 
