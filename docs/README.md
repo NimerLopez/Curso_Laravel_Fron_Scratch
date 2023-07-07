@@ -262,4 +262,6 @@ Cofres de juguetes y contratos
 ---
 ## Seccion 12
 
+Limite el acceso solo a los administradores
 
+- [62. Limit Access to Only Admins](./S12-Admin-Section/Limit-Access-to-Only-Admins.md)
