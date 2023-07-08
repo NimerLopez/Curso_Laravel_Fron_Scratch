@@ -282,3 +282,7 @@ Extraer componentes de hoja de forma específica
 Ampliar el diseño de administración
 
 - [66. Extend the Admin Layout](./S12-Admin-Section/Extend-the-Admin-Layout.md)
+
+Crear un formulario para editar y eliminar publicaciones
+
+- [67. Create a Form to Edit and Delete Posts](./S12-Admin-Section/Create-a-Form-to-Edit-and-Delete-Posts.md)

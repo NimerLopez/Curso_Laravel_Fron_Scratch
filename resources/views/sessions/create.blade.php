@@ -11,7 +11,7 @@
                     <x-form.input name="password" type="password" autocomplete="current-password" required />
 
                     <x-form.button>Log In</x-form.button>
-                </form>
+                </form><
             </x-panel>
         </main>
     </section>
