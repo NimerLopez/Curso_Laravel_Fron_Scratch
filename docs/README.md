@@ -268,4 +268,13 @@ Limite el acceso solo a los administradores
 
 Crear el formulario de publicación
 
-- [62. Create the Publish Post Form](./S12-Admin-Section/Create-the-Publish-Post-Form.md)
+- [63. Create the Publish Post Form](./S12-Admin-Section/Create-the-Publish-Post-Form.md)
+
+
+Validar y almacenar miniaturas de publicaciones
+
+- [64. Validate and Store Post Thumbnails](./S12-Admin-Section/Validate-and-Store-Post-Thumbnails.md)
+
+Extract Form-Specific Blade Components
+
+- [65. Extract Form-Specific Blade Components](./S12-Admin-Section/Extract-Form-Specific-Blade-Components.md)
