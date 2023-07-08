@@ -278,3 +278,7 @@ Validar y almacenar miniaturas de publicaciones
 Extraer componentes de hoja de forma específica
 
 - [65. Extract Form-Specific Blade Components](./S12-Admin-Section/Extract-Form-Specific-Blade-Components.md)
+
+Ampliar el diseño de administración
+
+- [66. Extend the Admin Layout](./S12-Admin-Section/Extend-the-Admin-Layout.md)
