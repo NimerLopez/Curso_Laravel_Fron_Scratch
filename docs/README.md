@@ -275,6 +275,6 @@ Validar y almacenar miniaturas de publicaciones
 
 - [64. Validate and Store Post Thumbnails](./S12-Admin-Section/Validate-and-Store-Post-Thumbnails.md)
 
-Extract Form-Specific Blade Components
+Extraer componentes de hoja de forma específica
 
 - [65. Extract Form-Specific Blade Components](./S12-Admin-Section/Extract-Form-Specific-Blade-Components.md)
