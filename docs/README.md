@@ -286,3 +286,7 @@ Ampliar el diseño de administración
 Crear un formulario para editar y eliminar publicaciones
 
 - [67. Create a Form to Edit and Delete Posts](./S12-Admin-Section/Create-a-Form-to-Edit-and-Delete-Posts.md)
+
+Lógica de validación de grupos y tiendas
+
+- [68. Group and Store Validation Logic](./S12-Admin-Section/Group-and-Store-Validation-Logic.md)

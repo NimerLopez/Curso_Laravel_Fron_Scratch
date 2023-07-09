@@ -147,7 +147,7 @@ El formulario ejecuta el metodo del controlador para editar, cada elemento debe 
         return back()->with('success', 'Post Updated!');
     }
 ```
-Se valdian todos los datos y que el slug pueda ser el mismo y despues se guarda en la base de datos.
+Se validan todos los datos y que el slug pueda ser el mismo y despues se guarda en la base de datos.
 
 ## 5 Crear el Controlador para eliminar  
 
