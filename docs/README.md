@@ -300,6 +300,12 @@ Todo sobre la autorización
 EL FIN: Realizado por Nimer.
 
 Curso by Jeffrey Way.
+
+### Conclusiones.
+
+El curo Laravel 8 Froms Cratch, es muy interesante ya que ayuda a personas nuevas en programación o que quieren aprender sobre Laravel, a conseguir las bases para iniciar un nuevo proyecto en el cual se va a poner en práctica lo aprendido, La forma en la que se explica es muy clara, aunque no se hable ingles solo con seguirlo e ir escuchando se va aprendiendo. Aunque hay veces que el impartidor del curso hace métodos que luego los va a cambiar o va muy rápido, pero se entiende lo que uno está haciendo. Cuando surgen errores hay que tomarle su tiempo ya que al ser nuevo es este Framework y estamos utilizando un entorno de desarrollo diferente al que imparte en el curso, puede que los errores sean más difíciles de solucionar por ello hay que saber ingeniárselas o investigar.
+
+
 - [70. Puedes ver el curso, "AQUI" ](https://laracasts.com/series/laravel-8-from-scratch)
 
 ---
