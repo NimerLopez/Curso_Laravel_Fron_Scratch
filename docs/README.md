@@ -290,3 +290,16 @@ Crear un formulario para editar y eliminar publicaciones
 Lógica de validación de grupos y tiendas
 
 - [68. Group and Store Validation Logic](./S12-Admin-Section/Group-and-Store-Validation-Logic.md)
+
+Todo sobre la autorización
+
+- [69. All About Authorization](./S12-Admin-Section/All-About-Authorization.md)
+
+---
+
+EL FIN: Realizado por Nimer.
+
+Curso by Jeffrey Way.
+- [70. Puedes ver el curso, "AQUI" ](https://laracasts.com/series/laravel-8-from-scratch)
+
+---

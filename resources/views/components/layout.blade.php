@@ -37,7 +37,7 @@ html {
                     <x-slot name="trigger">
                         <button class="text-xs font-bold uppercase">Bienvenido,{{auth()->user()->name}} </button>
                     </x-slot>
-
+                          @admin  
                             <x-dropdown-item
                                 href="/admin/posts"
                                 :active="request()->is('admin/posts')"
@@ -51,6 +51,7 @@ html {
                             >
                                 New Post
                             </x-dropdown-item>
+                            @endadmin
                             <x-dropdown-item
                                 href="#"
                                 x-data="{}"

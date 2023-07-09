@@ -17,10 +17,10 @@ class MustBeAdministrator
     public function handle(Request $request, Closure $next)
     {
         
-        if (!auth()->user() || auth()->user()->username !== 'Nimerxxx') {
-            abort(403);
-        }
+        // if (auth()->user()?->cannot('admin')) {
+        //     abort(403);
+        // }
         
-        return $next($request);
+        // return $next($request);
     }
 }
